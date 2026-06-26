@@ -3489,21 +3489,3 @@ document.addEventListener('keydown',e=>{if(['ArrowRight','ArrowDown',' '].includ
 document.querySelector('.deck').addEventListener('click',e=>{if(e.target.closest('.side')||e.target.closest('.ctrl-btn')||e.target.closest('#cy1')||e.target.closest('#cy2'))return;go(cur+1);});
 </script>
 </body></html>
-
-@media print {
-  .slide {
-    display: flex !important;
-    position: relative !important;
-    page-break-after: always;
-  }
-  .slide.active {
-    display: flex !important;
-  }
-  .deck, .slide-wrapper {
-    height: auto !important;
-    width: 100% !important;
-  }
-  .progress-bar, .slide-counter, .nav-hint {
-    display: none !important;
-  }
-}
